@@ -18,8 +18,7 @@
 
 </style>
 <?php
-$isClient = getLoggedInUser() ? true : false;
-$client = getLoggedInUser();
+
 $total = 0;
 ?>
 @foreach ($data['cart']['inventories'] as $product)

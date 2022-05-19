@@ -1,6 +1,5 @@
 <?php
-$isClient = getLoggedInUser() ? true : false;
-$client = getLoggedInUser();
+
 $total = 0;
 ?>
 @foreach ($data['cart']['inventories'] as $product)
@@ -47,21 +46,21 @@ $total = 0;
                                     <div class="col-md-6 mb-3">
                                         <label for="first_name">First Name <span>*</span></label>
                                         <input type="text" class="form-control" id="first_name" name="fname"
-                                            value="{{ $isClient ? ($client['fname'] ? $client['fname'] : '') : '' }}"
+                                            value=""
                                             required>
                                         <div class="errorMessage"></div>
                                     </div>
                                     <div class="col-md-6 mb-3">
                                         <label for="last_name">Last Name <span>*</span></label>
                                         <input type="text" class="form-control" id="last_name" name="lname"
-                                            value="{{ $isClient ? ($client['lname'] ? $client['lname'] : '') : '' }}"
+                                            value=""
                                             required>
                                         <div class="errorMessage"></div>
                                     </div>
                                     <div class="col-12 mb-4">
                                         <label for="email_address">Email Address <span>*</span></label>
                                         <input type="email" class="form-control" id="email_address" name="email"
-                                            value="{{ $isClient ? ($client['email'] ? $client['email'] : '') : '' }}"
+                                            value=""
                                             required>
                                         <div class="errorMessage"></div>
                                     </div>
@@ -70,7 +69,7 @@ $total = 0;
                                         <label for="phone_no">Phone No <span>*</span></label>
                                         <input type="number" class="form-control" id="phone_no" name="phone_no"
                                             min="0"
-                                            value="{{ $isClient ? ($client['phone_no'] ? $client['phone_no'] : '') : '' }}"
+                                            value=""
                                             required>
                                         <div class="errorMessage"></div>
                                     </div>
@@ -107,26 +106,26 @@ $total = 0;
                                     <div class="col-12 mb-3">
                                         <label for="street_address">Address <span>*</span></label>
                                         <input type="text" class="form-control mb-3" id="street_address" name="add1"
-                                            value="{{ $isClient ? ($client['address'] ? $client['address']['city'] : '') : '' }}   ">
+                                            value="  ">
                                         <div class="errorMessage"></div>
 
                                     </div>
                                     <div class="col-12 mb-3">
                                         <label for="city">Town/City <span>*</span></label>
                                         <input type="text" class="form-control" id="city" name="city"
-                                            value="{{ $isClient ? ($client['address'] ? $client['address']['city'] : '') : '' }}">
+                                            value="">
                                         <div class="errorMessage"></div>
                                     </div>
                                     <div class="col-12 mb-3">
                                         <label for="state">State/Province <span>*</span></label>
                                         <input type="text" class="form-control" id="state" name="state"
-                                            value="{{ $isClient ? ($client['address'] ? $client['address']['state'] : '') : '' }}">
+                                            value="">
                                         <div class="errorMessage"></div>
                                     </div>
                                     <div class="col-12 mb-3">
                                         <label for="postcode">Zip/Postal Code <span>*</span></label>
                                         <input type="text" class="form-control" id="postcode" name="zip"
-                                            value="{{ $isClient ? ($client['address'] ? $client['address']['zip'] : '') : '' }}">
+                                            value="">
                                         <div class="errorMessage"></div>
                                     </div>
 
