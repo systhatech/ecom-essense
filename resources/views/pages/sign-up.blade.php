@@ -1,0 +1,5 @@
+@include('component.header')
+@include('component.nav')
+@include('component.top-cart')
+@include('component.sign-up')
+@include('component.footer')

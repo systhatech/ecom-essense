@@ -1,0 +1,6 @@
+@include('EssencesSite::component.header')
+@include('EssencesSite::component.nav')
+@include('EssencesSite::component.top-cart')
+@include('EssencesSite::component.blog-slider')
+@include('EssencesSite::component.blog-single')
+@include('EssencesSite::component.footer')

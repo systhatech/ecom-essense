@@ -1,0 +1,22 @@
+{
+    "name": "systha/EssencesSite",
+    "description": "clothes",
+    "type": "libarary",
+    "license": "Systha Tech copywrite 2020",
+    "authors": [{
+        "name": "Suman Thapa",
+        "email": "nepalnme@gmail.com"
+    }],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {}
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Systha\\EssencesSite\\EssencesSiteServiceProvider"
+            ]
+        }
+    }
+}

@@ -1,0 +1,6 @@
+@include('EssencesSite::component.nav')
+@include('EssencesSite::component.top-cart')
+@include('EssencesSite::component.home')
+@include('EssencesSite::component.global-sale')
+@include('EssencesSite::component.popular-product')
+@include('EssencesSite::component.brand-logo') 

@@ -1,0 +1,7 @@
+@include('component.header')
+@include('component.nav')
+@include('component.top-cart')
+@include('component.shop-slider')
+@include('component.shop-side-bar')
+@include('component.offer-view')
+@include('component.footer')
